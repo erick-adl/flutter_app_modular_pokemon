@@ -1,3 +1,4 @@
+import 'package:app_modular/app/shared/repositories/localstorage/local_storage_interface.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_modular/flutter_modular.dart';
@@ -11,6 +12,8 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   final _homeController = Modular.get<HomeController>();
+  final ILocalStorage storage = Modular.get();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
