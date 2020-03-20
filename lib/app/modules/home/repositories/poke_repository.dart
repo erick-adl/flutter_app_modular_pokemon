@@ -1,4 +1,4 @@
-import 'package:app_modular/app/shared/models/poke_model.dart';
+import 'package:app_modular/app/modules/home/models/poke_model.dart';
 import 'package:dio/dio.dart';
 
 class PokeRepository {
